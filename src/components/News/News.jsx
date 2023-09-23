@@ -8,7 +8,7 @@ const News = () => {
 
   useEffect(() => {
     const apiKey = import.meta.env.VITE_REACT_APP_NEWS_API_KEY;
-    const apiUrl = import.meta.apiUrl.APIURL;
+    const apiUrl = import.meta.env.APIURL;
 
     fetch(apiUrl)
       .then((response) => response.json())
