@@ -17,7 +17,7 @@ function App() {
       <Chat/>
       <Carousel/>
       <Professionals/>
-      <News/>
+{/*       <News/> */}
       <Justice/>
       <PracticeAreas/>
       <Footer/>
