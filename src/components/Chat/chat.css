@@ -1,0 +1,111 @@
+.chat-bot-container {
+    transition: all 0.4s;
+}
+.chat-icon {
+    position: fixed;
+    z-index: 10;
+    right: 50px;
+    bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 60px;
+    color: rgb(163, 19, 43);
+    cursor: pointer;
+    /* transition: all 0.3s; */
+}
+
+.chat-icon img{
+    height: 70px;
+    width: 70px;
+}
+.chat-icon:hover {
+    color: rgb(231, 9, 9);
+}
+.chat-box {
+    width: 400px;
+    height: 450px;
+    background-color: rgb(202, 225, 233);
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1000;
+    right: 40px;
+    bottom: 130px;
+    transition: all 0.4s;
+    align-items: center;
+}
+.chat-box p {
+    font-size: 1.2rem;
+    margin-top:1.5rem;
+    color: black;
+    font-weight: 600;
+    font-family: 'Montserrat', 'sans-serif';
+    text-align: center;
+} 
+.chat-msgs {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    overflow:auto;
+    /* background-color: white; */
+    /* padding: 10px 20px; */
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.chat-msgs::-webkit-scrollbar {
+    background-color: black;
+    width: 100px;
+  }
+.chat-msgs::-webkit-scrollbar-track {
+    background-color: black; /* Change the background color of the scrollbar track */
+  }
+.chat-msgs::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Change the color of the scrollbar thumb */
+  }
+.user-msg {
+    padding: 5px;
+    text-align: right;
+    margin: 0 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+}
+.bot-msg {
+    padding: 5px;
+    margin: 0 20px;
+    margin-top: 10px;
+    background-color: var(--color-primary-variant);
+    color: #FFFF;
+    border-radius: 10px;
+    width: fit-content;
+}
+.input-form {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.input-form input {
+    width: 70%;
+    height: 30px;
+    background: transparent;
+    border: 3px solid var(--color-primary-variant);
+    border-radius: 10px;
+    margin-left: 20px;
+    /* border-color: black; */
+}
+
+.input-form button {
+    outline: none;
+    border: none;
+    background: transparent;
+    /* width: 20%; */
+}
+
+.input-form .voice{
+    margin-left: 10px;
+}

@@ -1,0 +1,51 @@
+.practiceContent{
+    padding: 3vw;
+    background-color: rgb(94, 94, 94);
+    margin: 0rem 5rem;
+    border-radius: 20px;
+    /* background: url('../../assets/carousel/c1.png'); */
+}
+
+.headingPractice{
+    text-align: center;
+    color: var(--color-primary-variant);
+    font-weight: bolder;
+}
+
+.descPractice{
+    text-align: center;
+    color: #FFFF;
+}
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.about_card{
+    background: rgb(109, 109, 109);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    transition: all 400ms ease;;
+}
+
+.about_card:hover{
+    background: var(--color-primary-variant);
+    border-color: orangered;
+    cursor: default;
+}
+
+.about_card .about_icon{
+    color: orangered;
+    font-size: 1.4rem;
+}
+
+.about_card h3{
+    color: #FFFF;
+}
+.about_card small{
+    font-size: 0.9rem;
+    color: #ffffffad;
+}
