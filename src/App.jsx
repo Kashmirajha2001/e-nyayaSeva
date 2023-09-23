@@ -8,7 +8,7 @@ import SignUp from './components/SignUp/SignUp';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/e-nyayaSeva">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
