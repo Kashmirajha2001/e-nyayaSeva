@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './news.css';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
@@ -7,8 +7,8 @@ const News = () => {
   const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
-    // const apiKey = 66a03e8203244c1e92ba9c6bf22fc4de;
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&apiKey=66a03e8203244c1e92ba9c6bf22fc4de`;
+    const apiKey = "66a03e8203244c1e92ba9c6bf22fc4de";
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
 
     fetch(apiUrl)
       .then((response) => response.json())
