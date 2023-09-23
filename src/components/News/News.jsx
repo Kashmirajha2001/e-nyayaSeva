@@ -8,7 +8,7 @@ const News = () => {
 
   useEffect(() => {
     const apiKey = import.meta.env.VITE_REACT_APP_NEWS_API_KEY;
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
+    const apiUrl = import.meta.apiUrl.APIURL;
 
     fetch(apiUrl)
       .then((response) => response.json())
